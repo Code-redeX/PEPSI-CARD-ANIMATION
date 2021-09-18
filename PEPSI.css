@@ -51,10 +51,10 @@ body
     transition:0.5s;
 }
 
-.card:hover .circle::before
+.card:hover .circle::before 
 {
     clip-path: circle(400px at center);
-    background: #111;
+    background: #222;
 }
 
 .card img
@@ -71,13 +71,13 @@ body
 .card:hover img
 {
     left:72%;
-    height:400px;
+    height:500px;
 }
 
 .card .content
 {
     position:relative;
-    width:50%;
+    width:50%;  
     left:20%;
     padding: 20px 20px 20px 40px;
     transition: 0.5s;
@@ -112,10 +112,21 @@ body
     padding:10px 20px;
     background: #FFF;
     border-radius:10px;
-    color:#111;
+    color:#555;
     margin-top : 15px;
     display: inline-block;
     text-decoration:none;
+}
+
+.card .content a:hover
+{
+    transform : scale(1.05);
+}
+
+.card .content a:active
+{
+    transform: scale(1);
+    background-color: #DDD;
 }
 
 span
